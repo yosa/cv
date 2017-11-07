@@ -1,0 +1,26 @@
+@media print {
+  .side-nav,
+  .card {
+    box-shadow: none;
+  }
+  .links,
+  .chip {
+    -webkit-print-color-adjust: exact;
+  }
+  .wrapper-cards {
+    margin-left: 310px;
+  }
+  .page-break {
+    page-break-inside: avoid;
+  }
+  .col.l12 {
+    width: 80%;
+  }
+  .link--version-online {
+    display: block;
+  }
+  .card-item--skills {
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=styles-print.css.map */

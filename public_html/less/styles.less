@@ -1,0 +1,221 @@
+@import "colors.less";
+
+body
+{
+    font-family: Roboto;
+    background-color: @body-bacground-color
+}
+
+.side-nav
+{
+    overflow: hidden;
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(158,158,158,1);
+    -moz-box-shadow: 4px 2px 5px 0px rgba(158,158,158,1);
+    box-shadow: 4px 2px 5px 0px rgba(158,158,158,1);
+}
+
+@media only screen and (max-width : 992px) {
+    main, footer {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 992px)
+{
+    main
+    {
+        padding-left: 170px;
+    }
+}
+
+.header
+{
+    text-align: center;
+    color: #424242;
+    
+    .photo
+    {
+        max-height: 116px;
+        margin-top: 15px;
+    }
+    
+    .name
+    {
+        font-size: 18px;
+        margin-bottom: 0;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    
+    .title
+    {
+        font-size: 18px;
+        margin-top: 0;
+    }
+    
+}
+
+.links
+{
+    color: #000;
+    height: 100%;
+    background-color: @sidebar-background;
+    
+    .title
+    {
+        font-size: 18px;
+        padding: 10px;
+        color: #fff;
+        padding-left: 15px;
+        
+        &:first-child
+        {
+            padding-top: 36px;
+        }
+        
+        .icon
+        {
+            margin-right: 20px;
+        }
+        
+    }
+    
+    .link-item,
+    .icon
+    {
+        color: #fff;
+        
+        &.google
+        {
+            font-size: 12px;
+        }
+        
+        &.phone
+        {
+            font-size: 22px;
+        }
+        
+    }
+    
+}
+
+.card-item
+{
+    color: @work-experience-title-color;
+    
+    ul
+    {
+        margin: 0;
+    }
+    
+    .card-title
+    {
+        font-weight: bold;
+        color: @work-experience-title-color;
+        
+        .icon
+        {
+            width: 38px;
+        }
+        
+    }
+    
+    .card-list-item
+    {
+        margin-left: 45px;
+        border-bottom: 2pt solid @work-item-separator-color;
+        padding: 10px 0;
+        position: relative;
+        
+        &:last-child
+        {
+            border-bottom: none;
+        }
+        
+        .icon
+        {
+            position: absolute;
+            font-size: 25px;
+            top: 36px;
+        }
+        
+    }
+    
+    
+    
+    .card-list-item--code
+    {
+        a
+        {
+            color: inherit
+        }
+        
+        .card-list-item__title,
+        .card-list-item__text
+        {
+            margin-left: 40px;
+        }
+        
+    }
+    
+    .card-list-item__title,
+    .work-title
+    {
+        &:first-child
+        {
+            margin-top: 0;
+        }
+        
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: @work-title-color;
+        font-weight: bold;
+    }
+    
+    .work-dates
+    {
+        color: @sidebar-background !important;
+    }
+    
+}
+
+.skill-title,
+.skill-list
+{
+    margin-left: 45px !important;
+}
+
+.skill-title
+{
+    font-size: 14px;
+}
+
+.skill-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+    .chip a
+    {
+        color: inherit;
+        cursor: pointer;
+    }
+    
+}
+
+.link--version-online
+{
+    background-color: #fff;
+    margin: 30px 0 0;
+    display: none;
+    
+    .link-item,
+    .icon
+    {
+        color: @sidebar-background;
+        margin: 0;
+        text-align: center;
+    }
+    
+}

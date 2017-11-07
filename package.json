@@ -1,0 +1,19 @@
+{
+    "name": "curriculum",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Luis Josafat Heredia Contreras",
+    "contributors": [],
+    "dependencies": {
+        "materialize-css": "^0.99.0"
+    },
+    "devDependencies": {
+        "webpack": "^3.0.0"
+    }
+}
